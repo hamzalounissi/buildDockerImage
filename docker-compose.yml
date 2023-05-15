@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  backend:
+    image: 'com.cicd.builddockerimage:latest'
+    ports:
+      - '8080:8080'
+    environment:
+      - ENVIRONMENT_VAR=${ENVIRONMENT_VAR}
